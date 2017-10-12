@@ -1,24 +1,46 @@
-# README
+# Flyer Database
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project's goal is to create a living historical database of DIY art/music events in the San Francisco Bay Area and possibly beyond. This database will focus on the flyers created for the events. Flyers are a work of art in and of themselves, whose creators are often not mentioned. I would like to track and maintain this art and make it easily accessible and updatable for free. 
 
-Things you may want to cover:
+# Features
 
-* Ruby version
+### The main feature of this project is a search tool that allows you to find flyers using various search paramaters. 
 
-* System dependencies
+* Users able to upload Flyers and add following data about flyer
 
-* Configuration
+  - Date
+  - Bands/Artists
+  - Location
+  - Creator of Flyer
 
-* Database creation
+* Tags
 
-* Database initialization
+  - users will be able to add a list of tags, such as music genre, with each flyer to create more search parameters
 
-* How to run the test suite
+* Search Feature
 
-* Services (job queues, cache servers, search engines, etc.)
+  - search by:
+    -  band/artist
+    - location
+    - year
+    - month 
+    - date range
+    - collective, booking group, or record label hosting the event
+    - venue
+    - type of music
+    - tags
 
-* Deployment instructions
+# Technologies
 
-* ...
+* Rails Backend
+
+* React/Redux Frontend
+
+* Webpack
+
+* Babel
+
+* Sass
+
+* PostgreSQL
+
