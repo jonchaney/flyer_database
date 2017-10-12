@@ -35,7 +35,7 @@ class SessionForm extends React.Component {
         email: this.state.email
       };
     }
-    this.props.processForm(user).then(() => this.props.history.push(`/profile`));
+    this.props.processForm(user).then(() => {});
   }
 
   navLink() {
