@@ -6,17 +6,6 @@ This project's goal is to create a living historical database of DIY art/music e
 
 ### The main feature of this project is a search tool that allows you to find flyers using various search paramaters. 
 
-* Users able to upload Flyers and add following data about flyer
-
-  - Date
-  - Bands/Artists
-  - Location
-  - Creator of Flyer
-
-* Tags
-
-  - users will be able to add a list of tags, such as music genre, with each flyer to create more search parameters
-
 * Search Feature
 
   - search by:
@@ -29,6 +18,12 @@ This project's goal is to create a living historical database of DIY art/music e
     - venue
     - type of music
     - tags
+
+* Users able to upload Flyers and add all of the above info about flyer.
+
+* Tags
+
+  - users will be able to add a list of tags, such as music genre, with each flyer to create more search parameters
 
 # Technologies
 
