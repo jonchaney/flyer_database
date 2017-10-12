@@ -13,6 +13,10 @@ class Home extends React.Component {
       return (
         <div>
           <h1>Flyer Database</h1>
+          <ul className="nav">
+            <li><Link to="/login">login</Link></li>
+            <li><Link to="/signup">sign up</Link></li>
+          </ul>
         </div>
       );
   }
