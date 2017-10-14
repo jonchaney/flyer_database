@@ -8,12 +8,10 @@ class Header extends React.Component {
     super(props);
   }
 
-
-
   render() {
     return (
       <div className="header">
-        <h1><Link to="/">notaflof.world</ Link></h1>
+        <h1><Link to="/">notaflof.world</Link></h1>
         <GreetingContainer />
       </div>
     );

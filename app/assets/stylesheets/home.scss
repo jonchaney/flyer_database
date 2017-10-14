@@ -46,6 +46,7 @@
 .login-form-container {
     position: relative;
     float: right;
+    // display: flex;
     top: 31px;
     margin: 2px 14px 0 0px;
     .login-input {
@@ -68,4 +69,45 @@
     right: 64px;
     top: -19px;
     text-align: right;
+}
+
+@media (max-width: 480px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: pink;
+    height: 160px;
+    div {
+      position: fixed;
+      ul {
+        display: flex;
+        margin: 73px 0 39px 2px;
+      }
+    }
+  }
+
+  .login-form-container {
+    float: left;
+    top: 92px;
+    right: -17px;
+    .login-input {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      label {
+        padding: 8px 11px 0 0;
+      }
+    } 
+  }
+
+  .login-errors {
+    font-size: 10px;
+    color: red;
+    position: relative;
+    right: -1px;
+    top: 8px;
+    text-align: left;
+}
 }
