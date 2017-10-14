@@ -14,10 +14,9 @@ const App = () => (
   <div>
     <div>
       <HeaderContainer />
-      {/* <SessionFormContainer/> */}
     </div>
     <Switch>
-      <AuthRoute path="/login" component={SessionFormContainer} />
+      <AuthRoute path="/" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
     </Switch>
   </div>

@@ -43,7 +43,7 @@ class SessionForm extends React.Component {
   }
 
   navLink() {
-    if (this.props.formType === 'login') {
+    if (this.props.formType === '') {
       return "login";
     } else {
       return "sign up";

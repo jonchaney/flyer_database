@@ -1,3 +1,73 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.login-form-container {
+    position: relative;
+    float: right;
+    // display: flex;
+    top: 31px;
+    margin: 2px 14px 0 0px;
+    .login-input {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      label {
+        padding: 8px 0 0 0;
+        input.login-button {
+          width: 57px;
+          font-family: 'Didact Gothic', sans-serif;
+          font-weight: 900;
+        }
+      }
+    }
+}
+
+.login-errors {
+    font-size: 10px;
+    color: red;
+    position: relative;
+    right: 64px;
+    top: -19px;
+    text-align: right;
+}
+
+@media (max-width: 480px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    div {
+      position: fixed;
+      ul {
+        display: flex;
+        margin: 73px 0 39px 2px;
+      }
+    }
+  }
+
+  .login-form-container {
+    float: left;
+    top: 92px;
+    right: -17px;
+    .login-input {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      label {
+        padding: 8px 11px 0 0;
+      }
+    } 
+  }
+
+  .login-errors {
+    font-size: 10px;
+    color: red;
+    position: relative;
+    right: -1px;
+    top: 8px;
+    text-align: left;
+  }
+}

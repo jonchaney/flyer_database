@@ -12,7 +12,7 @@ class Greeting extends React.Component {
       <div>
           <ul className="nav">
             <li><Link to="/about">about</Link></li>
-            <li><Link to="/login">login</Link></li>
+            <li><Link to="/">login</Link></li>
             <li><Link to="/signup">signup</Link></li>
           </ul>
       </div>
@@ -22,7 +22,8 @@ class Greeting extends React.Component {
   personalGreeting(currentUser, logout) {
     return (
       <div>
-        <ul>
+        <ul className="logout-greeting">
+          <li>hi, {this.props.currentUser.username}</li>
           <li><button onClick={logout}>logout</button></li>
         </ul>
       </div>

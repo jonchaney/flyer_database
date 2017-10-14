@@ -10,9 +10,9 @@ const mapStateToProps = ({ session }) => ({
 });
 
 const mapDispatchToProps = (dispatch, { location }) => {
-  const formType = location.pathname.slice(1);
-  // const formType = 'login';
-  const processForm = (formType === 'login') ? login : signup;
+  // const formType = location.pathname.slice(1);
+  let formType = location.pathname.slice(1);
+  const processForm = (formType === "signup") ? signup : login;
   return {
     login: (user) => dispatch(login(user)),
     processForm: user => dispatch(processForm(user)),
