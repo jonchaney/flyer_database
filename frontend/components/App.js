@@ -9,12 +9,12 @@ import {AuthRoute} from '../util/route_util';
 
 import SessionFormContainer from './sessionForm/sessionFormContainer';
 import HeaderContainer from './header/headerContainer';
+import AboutContainer from './about/aboutContainer';
 
 const App = () => (
-  <div>
-    <div>
-      <HeaderContainer />
-    </div>
+  <div>   
+    <HeaderContainer />
+      <Route path="/about" component={AboutContainer}/>
     <Switch>
       <AuthRoute path="/" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />

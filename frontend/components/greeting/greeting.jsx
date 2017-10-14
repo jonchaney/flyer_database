@@ -31,6 +31,7 @@ class Greeting extends React.Component {
   }
 
   render() {
+    console.log(this.props.location.pathname.slice(1));
     const greeting = this.props.currentUser ?
       this.personalGreeting(this.props.currentUser, this.props.logout) :
       this.sessionLinks(this.props.login);

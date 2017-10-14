@@ -1,0 +1,17 @@
+.about {
+    position: fixed;
+    top: 138px;
+    left: 12px;
+    display: flex;
+    p {
+      font-family: 'Didact Gothic', sans-serif;
+      font-weight: 500;
+      color: #764B7F;
+    }
+}
+
+@media (max-width: 480px) {
+  .about {
+    top: 172px;
+  }
+}
