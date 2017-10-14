@@ -41,9 +41,16 @@
     height: 160px;
     div {
       position: fixed;
+      .logout-greeting {
+        // flex-direction: row
+        align-items: flex-start; 
+      }
       ul {
         display: flex;
         margin: 73px 0 39px 2px;
+        li {
+        padding: 3px 0px 0px 15px;
+        }
       }
     }
   }
