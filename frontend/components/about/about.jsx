@@ -9,7 +9,7 @@ class About extends React.Component {
   render() {
     return (
       <div className="about">
-        <p>The goal of this site is to create a searchable and updatable database of diy shows in the San Francisco Bay Area.</p>
+        <p>searchable and updatable database for bay area diy shows.</p>
       </div>
     );
   }
