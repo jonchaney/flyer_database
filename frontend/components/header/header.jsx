@@ -13,7 +13,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <h1>notaflof.world</h1>
+        <h1><Link to="/">notaflof.world</ Link></h1>
         <GreetingContainer />
       </div>
     );

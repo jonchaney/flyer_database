@@ -10,10 +10,10 @@ class Greeting extends React.Component {
   sessionLinks(login, user) {
     return (
       <div>
-          <ul classNmae="nav">
+          <ul className="nav">
             <li><Link to="/about">about</Link></li>
-            <li><Link to="/signup">signup</Link></li>
             <li><Link to="/login">login</Link></li>
+            <li><Link to="/signup">signup</Link></li>
           </ul>
       </div>
     );
