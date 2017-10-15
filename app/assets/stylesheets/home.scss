@@ -53,7 +53,8 @@
     }
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-device-width: 667px) 
+    and (-webkit-device-pixel-ratio: 2) {
   .header {
     display: flex;
     flex-direction: column;
