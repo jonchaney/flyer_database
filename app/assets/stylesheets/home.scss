@@ -2,11 +2,10 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    width: 100%;
     transition: margin 0.25s ease-out;
     background-color: rgba(255,255,255,0.96);
     box-shadow: 0 0 1px 0 rgba(0,0,0,0.15);
-    height: 125px;
+    // height: 125px;
     a:visited {
       text-decoration: none;
       color: inherit;
@@ -18,9 +17,6 @@
       font-family: 'Didact Gothic', sans-serif;
       font-feature-settings: "liga" 0;
       letter-spacing: 1px;
-      font-weight: 600;
-      font-size: 48px;
-      margin: 15px 0 0 25px;
       color: #764B7F;
     }
     div {
@@ -31,12 +27,10 @@
         }
         ul {
           display: flex;
-          margin: 11px 14px 0 0;
           li {
             font-family: 'Didact Gothic', sans-serif;
             font-weight: 500;
             color: #764B7F;
-            padding: 0px 0px 0px 15px;
           a:hover {
             text-decoration: underline;
           }
@@ -69,35 +63,12 @@
     flex-direction: column;
     position: absolute;
     width: 100%;
-    height: 160px;
     h1 {
-      margin: 15px 0 0 16px;
     }
     div {
       position: fixed;
       ul {
         display: flex;
-        margin: 73px 0 39px 2px;
-      }
-    }
-  }
-}
-
-@media (max-width: 375px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-    height: 160px;
-    h1 {
-      margin: 15px 0 0 16px;
-    }
-    div {
-      position: fixed;
-      ul {
-        display: flex;
-        margin: 73px 0 39px 2px;
       }
     }
   }
