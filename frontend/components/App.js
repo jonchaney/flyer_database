@@ -13,12 +13,10 @@ import AboutContainer from './about/aboutContainer';
 
 const App = () => (
   <div>   
-    <HeaderContainer />
-      <Route path="/about" component={AboutContainer}/>
-    <Switch>
-      <AuthRoute path="/" component={SessionFormContainer} />
-      <AuthRoute path="/signup" component={SessionFormContainer} />
-    </Switch>
+      <HeaderContainer />
+      <Switch>
+        <Route path="/about" component={AboutContainer}/>
+      </Switch>
   </div>
 );
 
