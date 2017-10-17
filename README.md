@@ -1,4 +1,4 @@
-# notaflof.world
+# [notaflof.world](http://www.notaflof.world)
 
 This project's goal is to create a living historical database of DIY music events in the San Francisco Bay Area and possibly beyond. This database will focus on the flyers created for the events. Flyers are a work of art in and of themselves, whose creators are often not mentioned. I would like to track and maintain this art and make it easily accessible and updatable for free.
 
