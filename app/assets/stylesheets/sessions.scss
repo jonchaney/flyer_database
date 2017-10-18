@@ -19,17 +19,20 @@
 .login-errors {
     font-size: 10px;
     color: red;
-    position: relative;
-    right: 64px;
-    top: -19px;
-    text-align: right;
 }
 
 @media (max-width: 375px) {
   .login-form-container {
+    .login-form-box {
+      display: flex;
+      flex-direction: column;
+    }
     .login-form {
       display: flex;
       flex-direction: column;
+      div {
+        padding: 4px 0 0 0;
+      }
     }
     .login-input {
       display: flex;
@@ -42,8 +45,11 @@
   .login-errors {
     font-size: 10px;
     color: red;
-    position: relative;
-    text-align: left;
+    display: flex;
+    height: 13px;
+    p {
+      padding: 0px 8px 0 0px;
+    }
   }
 }
 
