@@ -86,13 +86,12 @@ class SessionForm extends React.Component {
                     placeholder="password"
                   />
                 </label>
-                <label>
+              </div> 
+              <div>
                   <input type="submit"
                     className="login-button"
                     value={this.navLink()} />
-                </label>
-
-              </div> 
+              </div>
                 {this.renderErrors()}
             </div>
           </form>
