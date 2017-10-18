@@ -18,7 +18,9 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <h1><Link to="/">notaflof.world</Link></h1>
+        <div>
+          <h1><Link to="/">notaflof.world</Link></h1>
+        </div>
         <GreetingContainer />
         <Switch>
           <AuthRoute path="/" component={SessionFormContainer} />

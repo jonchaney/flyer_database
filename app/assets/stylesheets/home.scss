@@ -50,9 +50,11 @@
     position: fixed;
     flex-direction: column;
     width: 100%;
+    padding: 4px 0 5px 8px;
     h1 {
     }
     div {
+      padding: 4px 0 0 0;
       ul {
         display: flex;
         li {
