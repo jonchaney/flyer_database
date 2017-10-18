@@ -3,9 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .login-form-container {
-
     .login-input {
-
       label {
         padding: 0 10px 0 0px;
         input.login-button {
@@ -54,7 +52,6 @@
       }
     } 
   }
-
   .login-errors {
     font-size: 10px;
     color: red;
@@ -63,9 +60,6 @@
     p {
       padding: 0px 8px 0 0px;
     }
-  }
-
-  .logout-greeting {
   }
 }
 
