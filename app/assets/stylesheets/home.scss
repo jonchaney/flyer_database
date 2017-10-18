@@ -3,6 +3,9 @@
     transition: margin 0.25s ease-out;
     background-color: rgba(255,255,255,0.96);
     box-shadow: 0 0 1px 0 rgba(0,0,0,0.15);
+    flex-direction: column;
+    padding: 0 0 0 11px;
+    height: 142px;
     a:visited {
       text-decoration: none;
       color: inherit;
@@ -17,12 +20,14 @@
     }
     div {
       display: flex;
+      padding: 4px 0px 4px 0px;
         ul {
           display: flex;
           li {
             font-family: 'Didact Gothic', sans-serif;
             font-weight: 500;
             color: #764B7F;
+            padding: 0 18px 0 0;
           a:hover {
             text-decoration: underline;
           }
