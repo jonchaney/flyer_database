@@ -21,14 +21,18 @@ class Header extends React.Component {
         <div>
           <h1><Link to="/">notaflof.world</Link></h1>
         </div>
-        <GreetingContainer />
-        <Switch>
-          <AuthRoute path="/" component={SessionFormContainer} />
-          <AuthRoute path="/signup" component={SessionFormContainer} />
-        </Switch>
+        <div className="about">
+          <p>Interactive archive showcasing DIY music event posters.</p>
+        </div>
       </div>
     );
   }
 }
 
 export default Header;
+
+{/* <GreetingContainer />
+  <Switch>
+    <AuthRoute path="/" component={SessionFormContainer} />
+    <AuthRoute path="/signup" component={SessionFormContainer} />
+  </Switch>  */}
