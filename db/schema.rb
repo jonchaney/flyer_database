@@ -30,12 +30,12 @@ ActiveRecord::Schema.define(version: 20171019192701) do
     t.integer "price"
     t.string "date", null: false
     t.string "presented_by"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.string "poster_creator"
     t.string "venue"
     t.string "city"
     t.string "address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
