@@ -10,6 +10,7 @@ import {AuthRoute} from '../util/route_util';
 import SessionFormContainer from './sessionForm/sessionFormContainer';
 import HeaderContainer from './header/headerContainer';
 import AboutContainer from './about/aboutContainer';
+import EventContainer from './events/eventsContainer';
 
 const App = () => (
   <div>   
@@ -17,6 +18,7 @@ const App = () => (
       <Switch>
         <Route path="/about" component={AboutContainer}/>
       </Switch>
+      <EventContainer />
   </div>
 );
 
