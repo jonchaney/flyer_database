@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store.js';
 import Root from './components/root';
 
-// import {fetchEvents} from './util/events_api_util';
+// import {createEvent} from './util/events_api_util';
+import { createEvent } from './actions/eventActions';
 import {fetchEvents} from './actions/eventActions';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // test
     window.fetchEvents = fetchEvents;
+    window.createEvent = createEvent;
     window.dispatch = store.dispatch;
   // end test
 

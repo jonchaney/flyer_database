@@ -8,7 +8,7 @@
     height: 125px;
     a:visited {
       text-decoration: none;
-      color: inherit;
+      color: #764B7F;
     }
     a {
       text-decoration: none;
@@ -21,26 +21,13 @@
     div {
       display: flex;
       padding: 4px 0px 0px 0px;
-        ul {
-          display: flex;
-          li {
-            font-family: 'Didact Gothic', sans-serif;
-            font-weight: 500;
-            color: #764B7F;
-            padding: 0 18px 0 0;
-          a:hover {
-            text-decoration: underline;
-          }
-          a {
-            color: #764B7F;
-            text-decoration: none;
-            }
-          }
-          button {
-            font-family: 'Didact Gothic', sans-serif;
-            font-weight: 900;
-          }
+      p {
+        font-family: 'Didact Gothic', sans-serif;
+        font-weight: 500;
+        color: #764B7F;
+        font-size: 13px;
       }
+      
     }
 }
 
@@ -56,12 +43,6 @@
     }
     div {
       padding: 4px 0 0 0;
-      ul {
-        display: flex;
-        li {
-          padding: 0 18px 0 0;
-        }
-      }
     }
   }
 }

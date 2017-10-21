@@ -14,6 +14,8 @@ event = Event.create!(price: 5,
                       poster_creator: "Rebecca Diablo", 
                       venue: "Pleasure Cove", 
                       city: "San Francisco")
+event.image = File.open('app/assets/images/1.jpg')
+event.save!
 
 b1 = Band.create!(name: "Swayed")
 b2 = Band.create!(name: "Mr. Wrong")

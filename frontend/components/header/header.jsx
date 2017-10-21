@@ -24,6 +24,12 @@ class Header extends React.Component {
         <div className="about">
           <p>Interactive archive showcasing DIY music event posters.</p>
         </div>
+        <div className="search">
+          {/* <SearchContainer /> */}
+        </div>
+        <div className="upload">
+          <p><Link to="./upload">upload</Link></p>
+        </div>
       </div>
     );
   }

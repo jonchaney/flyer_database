@@ -11,11 +11,14 @@ import SessionFormContainer from './sessionForm/sessionFormContainer';
 import HeaderContainer from './header/headerContainer';
 import AboutContainer from './about/aboutContainer';
 import EventContainer from './events/eventsContainer';
+import UploadContainer from './upload/uploadContainer';
 
 const App = () => (
   <div>   
-      <HeaderContainer />
-      {/* <EventContainer /> */}
+      <Route path='/' component={HeaderContainer}/>
+      <Switch>
+        <Route path='/upload' component={UploadContainer}/>
+      </Switch>
   </div>
 );
 
