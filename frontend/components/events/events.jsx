@@ -21,7 +21,7 @@ class Event extends React.Component {
             <ul>
               {this.props.events.map((event, idx) =>
                 <li key={idx}>
-                  <img src={event.image_url} />
+                  <img height={300} src={event.image_url} />
                 </li>
               )}
 

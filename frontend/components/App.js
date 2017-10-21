@@ -15,10 +15,7 @@ import EventContainer from './events/eventsContainer';
 const App = () => (
   <div>   
       <HeaderContainer />
-      <Switch>
-        <Route path="/about" component={AboutContainer}/>
-      </Switch>
-      <EventContainer />
+      {/* <EventContainer /> */}
   </div>
 );
 

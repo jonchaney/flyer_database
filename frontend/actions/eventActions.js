@@ -10,7 +10,7 @@ export const receiveEvents = events => ({
 
 export const fetchEvents = () => dispatch => {
   return APIUtil.fetchEvents().then(events => {
-    dispatch(receiveEvents(events));
+    dispatch(receiveEvents(events))
   }, errors => (
     dispatch(receiveErrors(errors))
   ));
