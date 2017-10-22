@@ -18,6 +18,7 @@
       h1 {
         font-family: 'Didact Gothic', sans-serif;
         font-feature-settings: "liga" 0;
+        letter-spacing: 1.25px;
         color: #764B7F;
       }
       // all p's that are in div's
@@ -29,7 +30,6 @@
         a:hover {
           text-decoration: underline;
         }
-
       }
     }
 }
