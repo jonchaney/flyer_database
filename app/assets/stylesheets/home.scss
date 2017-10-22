@@ -6,43 +6,44 @@
     flex-direction: column;
     padding: 0 0 0 11px;
     height: 125px;
-    a:visited {
-      text-decoration: none;
-      color: #764B7F;
-    }
+    // links in the header
     a {
       text-decoration: none;
-    }
-    h1 {
-      font-family: 'Didact Gothic', sans-serif;
-      font-feature-settings: "liga" 0;
       color: #764B7F;
     }
+    // all divs in the header
     div {
       display: flex;
       padding: 4px 0px 0px 0px;
+      h1 {
+        font-family: 'Didact Gothic', sans-serif;
+        font-feature-settings: "liga" 0;
+        color: #764B7F;
+      }
+      // all p's that are in div's
       p {
         font-family: 'Didact Gothic', sans-serif;
         font-weight: 500;
         color: #764B7F;
         font-size: 13px;
+        a:hover {
+          text-decoration: underline;
+        }
+
       }
-      
     }
 }
 
 @media (max-width: 375px){
   .header {
-    display: flex;
-    position: fixed;
-    flex-direction: column;
     width: 100%;
-    padding: 4px 0 5px 8px;
     h1 {
       font-weight: 900;
     }
     div {
-      padding: 4px 0 0 0;
+      p {
+        font-size: 12px;
+      }
     }
   }
 }

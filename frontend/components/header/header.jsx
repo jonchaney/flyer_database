@@ -21,13 +21,13 @@ class Header extends React.Component {
         <div>
           <h1><Link to="/">notaflof.world</Link></h1>
         </div>
-        <div className="about">
+        <div>
           <p>Interactive archive showcasing DIY music event posters.</p>
         </div>
         <div className="search">
           {/* <SearchContainer /> */}
         </div>
-        <div className="upload">
+        <div>
           <p><Link to="./upload">upload</Link></p>
         </div>
       </div>
