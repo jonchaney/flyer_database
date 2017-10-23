@@ -26,6 +26,14 @@ class Event < ApplicationRecord
   has_attached_file :image, default_url: "default_poster.jpeg"
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
+  after_save :transcribe!, if: :image_updated_at_changed?
+
+  private
+
+  def transcribe!
+    PosterTranscriptionJob.perform_later(self.id)
+  end
+
   def generate_transcription!
     return unless self.image.try(:url)
 
