@@ -24,5 +24,7 @@ module FlyerDatabase
         s3_host_name: "s3-#{ENV["s3_region"]}.amazonaws.com"
       }
     }
+
+    config.active_job.queue_adapter = :sidekiq
   end
 end

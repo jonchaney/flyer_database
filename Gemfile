@@ -35,6 +35,7 @@ gem 'figaro'
 gem 'aws-sdk', '>= 2.0'
 
 gem 'rest-client'
+gem 'sidekiq'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
