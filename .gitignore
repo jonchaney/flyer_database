@@ -22,3 +22,4 @@
 /config/application.yml
 
 app/assets/javascripts/bundle.js*
+.DS_Store
