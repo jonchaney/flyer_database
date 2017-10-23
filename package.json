@@ -29,7 +29,8 @@
     "npm": "3.10.10"
   },
   "scripts": {
-    "postinstall": "webpack"
+    "postinstall": "webpack",
+    "heroku-postbuild": "webpack",
+    "webpack": "webpack -w"
   }
 }
-
