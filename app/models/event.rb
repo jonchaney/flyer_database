@@ -28,8 +28,6 @@ class Event < ApplicationRecord
 
   after_save :transcribe!, if: :image_updated_at_changed?
 
-  private
-
   def transcribe!
     PosterTranscriptionJob.perform_later(self.id)
   end
@@ -39,9 +37,23 @@ class Event < ApplicationRecord
 
     response = RestClient.post 'https://api.ocr.space/parse/image',
       apikey: ENV['OCR_SPACE_API_KEY'],
-      url: self.image.url
+      url: clean_url
 
-    self.poster_transcription = response['ParsedResults'].first['ParsedText']
+    parsed = JSON.parse(response.body)
+    # Splits into space delimited tokens.
+    # Should `poster_transcription` be a different datatype?
+    tokens = split_ocr_results(parsed['ParsedResults'].first['ParsedText'])
+    self.poster_transcription = tokens
     self.save
+  end
+
+  private
+
+  def clean_url
+    self.image.url.split('?').first
+  end
+
+  def split_ocr_results(text)
+    text.split(/\W/).join(' ')
   end
 end
