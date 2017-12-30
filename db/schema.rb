@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 20171023055943) do
     t.integer "price"
     t.string "date", null: false
     t.string "presented_by"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string "poster_creator"
     t.string "venue"
     t.string "city"
@@ -38,8 +40,6 @@ ActiveRecord::Schema.define(version: 20171023055943) do
     t.string "image_content_type"
     t.integer "image_file_size"
     t.datetime "image_updated_at"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.text "poster_transcription"
   end
 
